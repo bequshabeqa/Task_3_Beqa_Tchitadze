@@ -6,7 +6,7 @@ public class Complex_Arithmeti_Expression {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            // chaweret ricxvebi: a, b, and c
+            // ჩაწერე რიცხვები: a, b, and c
             System.out.print("ჩაწერე a-ს მნიშვნელობა,სადაც (a != 0): ");
             double a = scanner.nextDouble();
 
