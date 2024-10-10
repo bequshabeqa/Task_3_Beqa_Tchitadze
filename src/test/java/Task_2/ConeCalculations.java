@@ -6,25 +6,25 @@ public class ConeCalculations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input radius, height, and slant height
-        System.out.print("Enter the radius (r) of the cone: ");
+        // შეიყვანე რადიუსი, სიმაღლე და დახრის სიმაღლე
+        System.out.print("დაწერეთ რადიუსის სიგრძე (r): ");
         double radius = scanner.nextDouble();
 
-        System.out.print("Enter the height (h) of the cone: ");
+        System.out.print("დაწერეთ სიმაღლე (h): ");
         double height = scanner.nextDouble();
 
-        System.out.print("Enter the slant height (s) of the cone: ");
+        System.out.print("დაწერეთ დახრის სიმაღლე (s): ");
         double slantHeight = scanner.nextDouble();
 
-        // Calculate surface area
+        // გამოთვალეთ ზედაპირის ფართობი
         double surfaceArea = Math.PI * radius * (radius + slantHeight);
 
-        // Calculate volume
+        // მოცულობა
         double volume = (1.0 / 3.0) * Math.PI * Math.pow(radius, 2) * height;
 
-        // Print results
-        System.out.printf("Surface Area of the cone: %.2f\n", surfaceArea);
-        System.out.printf("Volume of the cone: %.2f\n", volume);
+        // დაბეჭდე შედეგები
+        System.out.printf("ზედაპირის ფართობი: %.2f\n", surfaceArea);
+        System.out.printf("ცილინდრის მოცულობა: %.2f\n", volume);
 
         // Close the scanner
         scanner.close();
