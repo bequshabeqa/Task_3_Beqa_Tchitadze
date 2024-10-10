@@ -6,35 +6,35 @@ public class Basic_Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // chawere ori integers
-        System.out.print("sheiyvane pirveli integer: ");
+        // ჩაწერე ორი integers
+        System.out.print("ჩაწერე პირველი integer: ");
         int num1 = scanner.nextInt();
 
-        System.out.print("sheiyvane meore integer: ");
+        System.out.print("ჩაწერე მეორე integer: ");
         int num2 = scanner.nextInt();
 
-        // chawere moqmedeba
-        System.out.print("chawere moqmedeba (+, -, *, /, //): ");
+        // ჩაწერე მოქმედება
+        System.out.print("ჩაწერე მოქმედება (+, -, *, /, //): ");
         String moqmedeba = String.valueOf(scanner.next().charAt(0));
 
-        // calculatori
+        // კალკულატორი
         if (moqmedeba.equals("+")) {
-            System.out.println("shedegi: " + (num1 + num2));
+            System.out.println("შედეგი: " + (num1 + num2));
         } else if (moqmedeba.equals("-")) {
-            System.out.println("shedegi: " + (num1 - num2));
+            System.out.println("შედეგი: " + (num1 - num2));
         } else if (moqmedeba.equals("*")) {
-            System.out.println("shedegi: " + (num1 * num2));
+            System.out.println("შედეგი: " + (num1 * num2));
         } else if (moqmedeba.equals("/")) {
-            System.out.println("shedegi: " + num1 / num2);
+            System.out.println("შედეგი: " + num1 / num2);
         }
 
-        // o-ze gayofis akrdzalva
+        // o-ზე გაყოფის აკრძალვა
         else if (moqmedeba.equals(num2 != 0)) {
-            System.out.println("shedegi: " + (num1 / num2));
+            System.out.println("შედეგი: " + (num1 / num2));
         } else if (moqmedeba.isEmpty()) {
-            System.out.println("Error: o-ze gayofa ar sheidzleba.");
+            System.out.println("Error: 0-ზე გაყოფა არ შეიძლება.");
         } else {
-            System.out.println("Error: aseti moqmedeba ar arsebobs.");
+            System.out.println("Error: ასეთი მოქმედება არ არსებობს!");
         }
 
         // Close the scanner
