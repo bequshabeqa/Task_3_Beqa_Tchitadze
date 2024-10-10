@@ -6,13 +6,13 @@ public class Weighted_Avarage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // ქულის და წონის ნიშნები
+        // შეფასების და წონის მნიშვნელობები
         double[] scores = new double[5];
         double[] weights = new double[5];
 
-        // ჩაწერე ქულა და წონა
+        // ჩაწერე შეფასება და წონა
         for (int i = 0; i < 5; i++) {
-            System.out.print("ჩაწერე ქულის მნიშვნელობა " + (i + 1) + ": ");
+            System.out.print("ჩაწერე შეფასების მნიშვნელობა " + (i + 1) + ": ");
             scores[i] = scanner.nextDouble();
 
             System.out.print("ჩაწერე წონის მნიშვნელობა " + (i + 1) + ": ");
